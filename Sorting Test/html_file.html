@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+      <script type="text/javascript" src="js_file.js"></script>
+      <style>
+          table, td, th {
+            border: 1px solid black;
+          }
+      </style>
+</head>
+<body>
+    <form action="#" method="post">
+  <label for="UserID" style="display:block;">userID</label>
+  <input type="text" id="UserID" name="UserID" readonly>
+  <input type="text" id="UserName" name="UserName" placeholder="User Name" required>
+  <input type="text" id="UserOccupation" name="UserOccupation" placeholder="User Occupation" required>
+  <button type="button" >Add</button><br>
+</form>
+<br>
+
+Sort By:
+<select>
+  <option>UserID</option>
+  <option>UserName</option>
+  <option>UserOccupation</option>
+</select>
+<br>
+<br>
+<table id="table" class="tablesorter">
+  <thead>
+    <tr >
+      <th>UserID</th>
+      <th>UserName</th>
+      <th>UserOccupation</th>
+    </tr>
+  </thead>
+  <tbody>
+  </tbody>
+</table>
+
+
+
+</body>
+</html>
